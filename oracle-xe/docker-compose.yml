@@ -1,0 +1,8 @@
+web:
+  build: .
+  restart: always
+  environment:
+    - ORACLE_ALLOW_REMOTE=True
+  ports:
+    - '49160:22'
+    - '49161:1521'
